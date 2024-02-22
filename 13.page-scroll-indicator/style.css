@@ -1,0 +1,52 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    font-family: sans-serif;
+    background: #000;
+    color: #fff;
+}
+
+
+
+.content{
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.card{
+    border: 2px solid white;
+    padding: 1rem;
+    margin: 20px 0;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+
+
+.scroll-indicator{
+    position: fixed;
+    top: 10px;
+    left: 3rem;
+    width: calc(100% - 6rem);
+    height: 5px;
+    border-radius: 3px;
+}
+
+.scroll-indicator .scroll-filler{
+    height: 100%;
+    width: 0;
+    border-radius: 3px;
+    background-image: linear-gradient(to right,aqua, hotpink);
+    transition: width 0.1s;
+}
