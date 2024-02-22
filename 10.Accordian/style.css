@@ -1,0 +1,51 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+ul{
+    background-color: white;
+    display: flex;
+    width: 100%;
+    flex-flow: column nowrap;
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 0 1rem 0 1rem;
+    gap: 1rem;
+}
+
+.accordian-card {
+    list-style-type: none;
+    width: 100%;
+}
+.accordian-card label{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem 0 1rem 0;
+}
+
+.accordian-card .content{
+    font-size: 1.2rem;
+    color: hsla(0, 0%, 15%, 1);
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.4s;
+}
+
+.accordian-card  label + input[type="radio"] {
+    display: none;
+}
+input[type="radio"]:checked + .content {
+    max-height: 300px;
+}
