@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    width: 500px;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.scroll-area{
+    width: 400px;
+    height: 500px;
+    font: 1.5rem;
+    padding: 1rem;
+    color: white;
+    font-weight: medium;
+    background-color: black;
+    overflow: hidden;
+    overflow-y: scroll;
+
+}
+
+.scroll-content{
+    padding: 1rem;
+}
